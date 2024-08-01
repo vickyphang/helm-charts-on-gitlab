@@ -66,7 +66,7 @@ Applying YAML configuration files can get overwhelming, especially when needing 
         helm repo add --username <username> --password <access-token> <repo-name> https://gitlab.example.com/api/v4/projects/<project-id>/packages/helm/stable
 
         # example
-        helm repo add --username userv --password glpat-userv-token vicky https://gitlab.example.com/api/v4/projects/12345678/packages/helm/stable
+        helm repo add --username userv --password glpat-userv-token vicky https://gitlab.com/api/v4/projects/12345678/packages/helm/stable
         ```
     - Push the package
         ```bash
