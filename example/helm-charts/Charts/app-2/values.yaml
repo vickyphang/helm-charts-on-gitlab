@@ -1,0 +1,23 @@
+# numbers of pod replicas
+replicas: 3
+
+# service configurations
+service:
+  type: ClusterIP
+  port: 80
+  protocol: TCP
+
+# image configurations
+image:
+  name: nginx
+  tag: alpine
+  pullPolicy: Always
+
+# resources configurations
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "250m"
+  limits:
+    memory: "128Mi"
+    cpu: "250m"

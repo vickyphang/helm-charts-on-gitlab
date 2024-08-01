@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    {{- include "app-1.labels" . | nindent 4 }}
+  name: svc-{{ $.Release.Name }}
+spec:
+  ports:
+  - port: {{ $.Values.service.port }}
+    protocol: {{ default "TCP" $.Values.service.protocol }}
+    targetPort: {{ $.Values.service.port }}
+  selector:
+    {{- include "app-1.labels" . | nindent 4 }}
+  type: {{ $.Values.service.type }}

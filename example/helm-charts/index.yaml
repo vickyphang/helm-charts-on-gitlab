@@ -1,0 +1,35 @@
+apiVersion: v1
+entries:
+  app-1:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-08-01T11:02:13.9577551+07:00"
+    description: A Helm chart for Kubernetes
+    digest: d1e676cffe0db6d949a607a2e98bdbfd425976d99f879d0808f09016fb4b05b6
+    keywords:
+    - app-1
+    maintainers:
+    - email: vickyphang11@gmail.com
+      name: vicky
+      url: https://github.com/vickyphang
+    name: app-1
+    urls:
+    - https://gitlab.com/api/v4/projects/12345678/packages/helm/stable/app-1-1.0.0.tgz
+    version: 1.0.0
+  app-2:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-08-01T11:02:13.9583022+07:00"
+    description: A Helm chart for Kubernetes
+    digest: b9c479f8a7a1f736192263bb3816215af85a53e67830abfe4f2833e41e79ba28
+    keywords:
+    - app-2
+    maintainers:
+    - email: vickyphang11@gmail.com
+      name: vicky
+      url: https://github.com/vickyphang
+    name: app-2
+    urls:
+    - https://gitlab.com/api/v4/projects/12345678/packages/helm/stable/app-2-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-08-01T11:02:13.9572155+07:00"
