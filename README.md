@@ -53,11 +53,11 @@ Applying YAML configuration files can get overwhelming, especially when needing 
     ```
 - Generate helm repo index
     
-    A valid chart repository must have an **index file**. The index file contains information about each chart in the chart repository. The `helm repo index` command will generate an index file based on a given local directory that contains packaged charts. (In my case it located in folder **packages**)
+    A valid chart repository must have an **index file**. The index file contains information about each chart in the chart repository. The `helm repo index` command will generate an index file based on a given local directory that contains packaged charts.
     ```bash
     # generate index.yaml for packaged charts inside folder 'packages'
     # for the url, you just need to copy the project id of your helm-charts repository
-    helm repo index packages --url https://gitlab.com/api/v4/projects/<gitlab-project-id>/packages/helm/stable
+    helm repo index . --url https://gitlab.com/api/v4/projects/<gitlab-project-id>/packages/helm/stable
     ```
 - Commit and push all changes to Gitlab repository
 - Publish helm-chart package
